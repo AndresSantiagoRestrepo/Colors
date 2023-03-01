@@ -25,7 +25,7 @@ public class ColorsGame {
         return onChangeTargetColorListener;
     }
 
-    public void SetOnChangeTargetColorListener(OnChangeTargetColorListener newDelegate){
+    public void setOnChangeTargetColorListener(OnChangeTargetColorListener newDelegate){
         this.onChangeTargetColorListener = newDelegate;
     }
 
@@ -44,9 +44,9 @@ public class ColorsGame {
 public static int randomColor(){
     Random rand= new Random();
 
-    int redVal=rand.nextInt( 256);
-    int greenVal=rand.nextInt( 256);
-    int blueVal=rand.nextInt( 256);
+    int redVal=rand.nextInt(256);
+    int greenVal=rand.nextInt(256);
+    int blueVal=rand.nextInt(256);
     int color= Color.rgb(redVal,greenVal,blueVal);
 
     return color;
